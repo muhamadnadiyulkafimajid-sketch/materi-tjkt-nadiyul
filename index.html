@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>Materi TJKT</title>
+  
+</head>
+<body>
+	<header>
+	  <h1>MATERI TJKT</h1>
+	  <p><b>Nama:</b> MUHAMMAD NADIYUL KAFI MAJID</p>
+	  <p><b>Kelas:</b> 10 TJKT</p>
+	</header>
+	<h2>PERINTAH TEKS JARINGAN DI COMMAND PROMP</h2>
+	<p>(CMD) adalah instruksi berbasis teks untuk ping untuk mengecek konektivitas IP config jalur data, netstat untuk statistik koneksi, dan NS lookup untuk info DNS yang semuanya digunakan untuk pemecahan masalah dan konfigurasi jaringan di Windows 
+
+PERINTAH JARINGAN DASAR DAN FUNGSINYA 
+IP config: menampilkan konfigurasi IP (alamat IP, subnet mask, gateway default)
+ipconfig/all: menampilkan konfirmasi detail lengkap 
+ipconfig / flushdns: besok pulang kan membersihkan cache DNS
+IP config /relese & renew: melepas dan mendapat IP baru
+*ping [alamat]*: menguji konektivitas ke host lain (misal : ping google.com) 
+*tracert[alamat]*: melacak jalur paket data ke tujuan (misal: tracert Google.com)
+netstat: menampilkan koneksi jaringan aktif, tabel routing dan statistik 
+nslookup [nama_domain]: memeriksa informasi DNS untuk nama domain (misal: nslookup google.com) 
+route: menampilkan atau memanipulasi tabel routing IP 
+hostname: menampilkan nama komputer anda 
+cara membuka CMD 
+tekan tombol Windows + R, ketik CMD, lalu tekan enter klik start, ketik CMD, dan pilih untuk membukanya 
+contoh penggunaan 
+cek koneksi ke Google: ketik ping google.com lalu enter. jika berhasil, akan muncul respons waktu (Time) dan byte
+lihat alamat IP Anda: ketik ipconfig lalu enter 
+cari "ipv4 address"
+cari tahu alamat IP dari domain: ketik nslookup www.facebook.com lalu enter
+</p>
+
+<h2>IP address</h2>
+<p>IP address => merupakan alamat dalam jaringan yang terhubung antara client 1 dan 2 dan seterusnya di dalam IP address client terdapat gateway, 
+apa itu gateway=>lalu lintas atau jalan di dalam IP address terdapat juga subnet mask 
+subnet mask =>seolah kendaraan 
+IP address adalah nomor penumpan
+gateway jalannya atau lalu lintas (kabel dan nirkabel)
+alamat adalah berupa angka yang dikatakan dalam klien 
+di dalam IP address itu terdapat kelas :
+- Kelas A → 1.0.0.0 sampai 126.0.0.0
+- Kelas B → 128.0.0.0 sampai 191.255.0.0 
+- Kelas C → 192.0.0.0 sampai 223.255.255.0
+- kelas D → 224.0.0.0 sampai 239.255.255.255
+- Kelas E → 240.0.0.0 sampai 255.255.255.255
+</p>
+
+<h2>voltase dan wat perangkat elektronik</h2>
+<p>1. rice cooker, 220 volt, 300 sampai 400 watt <br>
+2. TV, 220 volt, 40 sampai 150 watt <br>
+3. dispenser, 220 volt, 190 sampai 340 watt <br>
+4. setrika, 220 volt, 300 sampai 400 watt <br>
+5. kulkas, 220 v 70 sampai 250 Watt <br>
+6. laptop, 220 volt (via adapter), 40 sampai 120 watt <br>
+7. PC, 220 volt, 200 sampai 600 watt <br>
+8. HP, 220 volt (via adapter), 5 sampai 30 watt <br>
+9. mesin cuci, 220 volt, 250 sampai 500 watt <br>
+10. charger, biasanya 5 sampai 20 watt, fast charging biasanya 30 sampai 120 watt, 100 sampai 240 volt <br></p>
+
+<h2>aplikasi virtual</h2>
+<p>#VirtualBox <br>
+*cara kerja: VirtualBox bekerja dengan membuat virtual (vm) yang meniru perangkat keras komputer setiap VM bisa menjalankan sistem operasi berbeda di atas host OS. <br>
+*fungsi dan manfaat: <br>
+-menjalankan beberapa OS sekaligus (Windows, Linux, macos,) <br>
+-testing software tanpa resiko ke sistem utama <br>
+-simulasi jaringan virtual <br>
+-isolasi lingkungan kerja <br>
+*kegunaan: cocok untuk developer, pelajar, dan IT ada yang butuh uji coba sistem atau aplikasi. <br>
+*konfigurasi: <br>
+-install VirtualBox di hots OS <br>
+-buat VM (virtual machine) lalu tentukan RAM, CPU, dan storage <br>
+-pasang iso OS yang diinginkan <br>
+-atur jaringan (N A T, BRIDGE, HOTS-ONLY) <br>
+ <br>
+#vmware <br>
+*cara kerja: PMR menggunakan teknologi virtualisasi untuk membagi sumber daya server fisik menjadi beberapa VM, setiap VM berjalan seolah-olah memiliki hardware sendiri. <br>
+*fungsi dan manfaat: <br>
+-menjalankan banyak OS dalam satu perangkat <br>
+-mendukung skala besar untuk mendata center dan cloud <br>
+-mempermudah manajemen server dan aplikasi <br>
+-efisiensi biaya dan fleksibilitas tinggi <br>
+*kegunaan: digunakan perusahaan untuk cloud computing server virtualization dan pengelolaan infrastruktur IT <br>
+*konfigurasi: <br>
+-install vmware workstation/ESXI <br>
+-buat VM lalu tentukan spesifikasi hardware virtual <br>
+-pasang OS via iso <br>
+-atur integrasi dengan vsphere/v center untuk manajemen skala besar <br>
+ <br>
+#proxmox <br>
+*cara kerja: rock smoke adalah platform open-sourseberbasis web untuk mengelola PM dan container mendukung kvm (virtualisasi penuh) dan lxc (container) <br>
+*fungsi dan manfaat: <br>
+-open-source dan gratis <br>
+-mendukung cluster ring dan high availability <br>
+-firewall bawaan dan integrasi dengan storage <br>
+*kegunaan: ideal untuk perusahaan kecil hingga data center besar yang dibutuhkan solusi hemat biaya tapi powerful <br>
+*konfigurasi: <br>
+-install proxmox ve di server fisik <br>
+-akses via web interface <br>
+-buat PM atau kontainer dan tentukan resource <br>
+-atur storage, jaringan, dan clostering jika diperlukan <br></p>
+
+<h2>Tebel profesi dalam bidang TI</h2>
+<table border="1">
+			<tr>
+				<th>No</th>
+				<th>Jenis Profesi</th>
+				<th>Deskripsi</th>
+				<th>Contoh Pekerjaan</th>
+				<th>Peluang Usaha</th>
+			</tr>
+			
+			<tr>
+				<td>1</td>
+				<td>Konten Creator</td>
+				<td>Membuat dan mengelola konten digital untuk media online</td>
+				<td>YouTuber, TikToker, Blogger, Streamer</td>
+				<td>jasa pembuatan konten, monetisasi YouTube, endorsement</td>
+			</tr>
+			
+			<tr>
+				<td>2</td>
+				<td>Desain Grafis</td>
+				<td>Mendesain visual untuk kebutuhan promosi dan branding</td>
+				<td>Desainer logo, poster, banner</td>
+				<td>Jasa desain logo, Poster, branding UMKM</td>
+			</tr>
+			
+			<tr>
+				<td>3</td>
+				<td>Desain UI/UX</td>
+				<td>Mendesain tampilan dan pengalaman pengguna aplikasi atau website</td>
+				<td>UI Desainer, UX Desainer, Reseacher</td>
+				<td>Jasa desain aplikasi atau website</td>
+			</tr>
+			
+			<tr>
+				<td>4</td>
+				<td>Pengembangan Software</td>
+				<td>Mengembangkan perangkat lunak sesuai kebutuhan</td>
+				<td>Software engineer, programer</td>
+				<td>
+				Jasa pembuatan software custom</td>
+			</tr>	
+			
+			<tr>
+				<td>5</td>
+				<td>Pengembangan Web</td>
+				<td>Membuat dan mengelola website</td>
+				<td>Web developer, Front-End/Back-end developer</td>
+				<td>jasa pembuatan website, web company profile</td>
+			</tr>	
+			
+			<tr>
+				<td>6</td>
+				<td>Pengembangan Aplikasi Mobile</td>
+				<td>membuat aplikasi berbasis Android/iOS</td>
+				<td>Mobile app developer</td>
+				<td>jasa pembuatan aplikasi mobile</td>
+			</tr>	
+			
+			<tr>
+				<td>7</td>
+				<td>Pengembangan Game</td>
+				<td>Membuat game digital untuk hiburan atau edukasi</td>
+				<td>Game developer, Game designer</td>
+				<td>Pembuatan dan penjualan game</td>
+			</tr>	
+			
+			<tr>
+				<td>8</td>
+				<td>Internet Marketer</td>
+				<td>Melakukan pemasaran produk melalui internet</td>
+				<td>Digital marketer, Sosial media spesialis</td>
+				<td>Jasa iklan online, Manajemen media sosial</td>
+			</tr>	
+			
+			<tr>
+				<td>9</td>
+				<td>Analisis Basis Data</td>
+				<td>Mengelola dan menganalisis data untuk pengambilan keputusan</td>
+				<td>Data analis, Data administrator</td>
+				<td>Jasa pengolahan data dan analisis data</td>
+			</tr>	
+			
+			<tr>
+				<td>10</td>
+				<td>Konsultan SEO</td>
+				<td>mengoptimalkan website agar mudah ditemukan di mesin pencarian</td>
+				<td>SEO Specialist</td>
+				<td>Jasa optimasi SEO website</td>
+			</tr>	
+			
+			<tr>
+				<td>11</td>
+				<td>Konsultan TI</td>
+				<td>Memberi solusi dan saran terkait teknologi informasi</td>
+				<td>IT Consultant</td>
+				<td>Jasa konsultan sistem TI</td>
+			</tr>	
+			
+			<tr>
+				<td>12</td>
+				<td>Konsultan Keamanan Jaringan</td>
+				<td>Menjaga dan meningkatkan keamanan jaringan</td>
+				<td>Network security engineer</td>
+				<td>Jasa audit dan keamanan jaringan</td>
+			</tr>	
+			
+			<tr>
+				<td>13</td>
+				<td>Pembisnis E-commerce</td>
+				<td>Menjalankan bisnis jual beli secara online</td>
+				<td>Owner online shop, Seller marketplace</td>
+				<td>Toko online, Dropshipping</td>
+			</tr>	
+			
+			<tr>
+				<td>14</td>
+				<td>Proyek startup</td>
+				<td>Mengembangkan usaha berbasis teknologi dan inovasi</td>
+				<td>founder startup</td>
+				<td>mendirikan perusahaan rintisan berbasis TI</td>
+			</tr>	
+
+		</table>
+</body>
+</html>
